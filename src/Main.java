@@ -14,8 +14,14 @@ public class Main {
             JLabel lblUserName = new JLabel("UserName");
             txtUserName = new JTextField(20); // textbox named txtUserName
 
+            // thêm Label Mật khẩu và textbox txtmatkhau
+            JLabel lblPassword = new JLabel("Mật khẩu");
+            JTextField txtmatkhau = new JPasswordField(20); // or JTextField if plain
+
             panel.add(lblUserName);
             panel.add(txtUserName);
+            panel.add(lblPassword);
+            panel.add(txtmatkhau);
 
             frame.getContentPane().add(panel);
             frame.pack();
